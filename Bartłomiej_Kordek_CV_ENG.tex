@@ -1,0 +1,154 @@
+\documentclass{article}
+
+\usepackage[a4paper, left=1.5cm, right=1.5cm, top=1.0cm, bottom=1.0cm]{geometry}
+\usepackage{graphicx} 
+\usepackage{polski}
+\usepackage[utf8]{inputenc}
+\usepackage{setspace} %dla \onehalfspacing
+\usepackage{lipsum}
+\usepackage{array, xcolor}
+
+\definecolor{lightgray}{gray}{0.8}
+
+\newcolumntype{L}{>{\raggedleft}p{0.14\textwidth}}
+
+\newcolumntype{R}{p{0.8\textwidth}}
+
+\newcommand\VRule{\color{lightgray}\vrule width 0.5pt}
+\newcommand{\wielkoscnnaglowkow}{\large}
+
+
+\newcolumntype{C}[1]{>{\centering\arraybackslash}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}m{#1}}
+
+
+\onehalfspacing
+\hyphenpenalty=5000
+\tolerance=1000
+
+\newcommand*{\studia}{Warsaw University of Technology, Faculty of Physics, major subject of Technical Physics, speciality: Materials and Nanostrcutures, obtained an engineering degre.}
+
+\newcommand{\header}[1] 
+{
+	\textbf{\wielkoscnnaglowkow #1}
+	\vspace{0.005\textheight}
+	\hrule 
+	\vspace{0.005\textheight}
+}
+
+\pagenumbering{gobble} 
+\begin{document}  
+\noindent
+\LARGE 
+\centering
+CURRICULUM VITAE \\
+\large
+\begin{tabular}{@{}p{0.70\textwidth} r}
+	 \begin{minipage}{0.70\textwidth}
+		\begin{tabular}{@{}l l} 
+		\textbf{Name}: 		& 	Bartłomiej Kordek\\
+		\textbf{Date and place of birth}: & 1989.08.02 Nowy Dwór Mazowiecki \\
+		\textbf{Address}:		&	ul. Prosta 211, 05-152 Czosnów	\\
+		\textbf{Telephone}:	& 507-832-154\\
+		\textbf{E-mail}:	&	 bartekordek@gmail.com\\
+		\end{tabular}	
+	\end{minipage}
+	
+	& 
+	\begin{minipage}{0.30\textwidth} 
+		\begin{center}
+			{\includegraphics[width=0.70\textwidth]{./ja}}
+		\end{center} 
+	\end{minipage}
+\end{tabular}
+\flushleft
+
+\large
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\header{Education}
+\begin{tabular}{@{} m{0.60\textwidth} R{0.37\textwidth} }
+\textbf{Warsaw University of Technology}	& {2008 - 2012} \\
+\end{tabular}
+ B.S. in Technical Physics, Specialisation: Materials \& Nanostructures.\\
+Thesis title: ”Experimental analysis of correlation between temperature of glass transition and thermal linear  expansion coefficient in chosen amorphous metallic alloys.”
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{tabular}{@{} m{0.60\textwidth} R{0.37\textwidth} }
+\textbf{School of Computer Science and Managment WIT}	& {2013 - today} \\
+\end{tabular}
+External studies - Computer Science.
+\flushleft
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\header{Experience}
+
+\begin{tabular}{@{} m{0.60\textwidth} R{0.37\textwidth} }
+\textbf{Samsung Electronics Polska}	& {2014-08 - 2014-12} 
+\end{tabular}
+Junior Software Developer\\
+\begin{itemize}
+	\item Management and improvement of automated test environment.
+	\item Software development in C/C++, Python and Bash shell.
+	\item Management and improvement of continuous integration environment.
+	\item Bug fixing.
+	\item Preparation of documentation (\LaTeX).
+\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{tabular}{@{} m{0.60\textwidth} R{0.37\textwidth} }
+	{ \textbf{Samsung Electronics Polska}}	& {2014-08 - 2014-12} 
+\end{tabular}
+Trainee\\
+\begin{itemize}
+	\item Management and improvement of continuous integration environment.
+	\item Software development ( Bash shell, C\#, C/C++ and Python).
+	\item Preparation of documentation (\LaTeX). 
+\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{tabular}{@{} m{0.60\textwidth} R{0.37\textwidth} }
+\textbf{Office worker in commune office}	& {2013.03 - 2014-06} 
+\end{tabular}
+\begin{itemize}
+	\item Making, editing and management of various types of documents.
+	\item Creation and maintenance of website.
+	\item Reception of enquirers.
+	\item Maintenance of various electronic equipment such as computers and printers.
+\end{itemize}
+
+\begin{tabular}{@{} m{0.5\textwidth} R{0.47\textwidth} }
+\textbf{Institute of Electron Technology PAN}	& {2011.07} 
+\end{tabular}
+Trainee:
+\begin{itemize}
+	\item Writing software in \emph{Labview} environment for servomechanism used in laser calibration.
+	\item Writing laser power control software (\emph{Labview}).
+	\item Creating a Bragg mirror for a fixed wavelength.
+\end{itemize}
+
+\header{Skills}
+\begin{itemize}
+	\item Office suite: (\emph{Microsoft Office}, \emph{Open Office}, \emph{Libre Office}) and \emph{Gnumeric} spreadsheet.
+	\item Experience in using \LaTeX \hspace {0.01\textwidth}typesetting system.
+	\item Experience in using operating systems: \emph{Linux} (\emph{Debian}, \emph{Ubuntu}, \emph{Xubuntu}) and \emph{Windows} (95, 98, Me, Xp, Vista, 7).
+	\item Basic skills in programming in: \emph{C}, \emph{C++}, \emph{C\#}, \emph{Java}, Linux shell scripts (\emph{Bash}), \emph{Labview\emph} and Python.
+	\item Experience in programming \emph{AVR} microcontrollers.
+	\item \emph{Mathematica} computation system and \emph{ROOT} data analysis framework.
+	\item Development environments: \emph{Eclipse}, \emph{VIM} and MS Visual Studio.
+	\item GIT and Perforce revision control systems.
+	\item Experience in creating websites (\emph{HTML} and \emph{CSS}).
+	\item Basic knowledge of electronics and electrotechnics.
+	\item \emph{JIRA} and \emph{FishEye}.
+\end{itemize}
+
+\header{Additional informations}
+Driving license - B category.\\
+English language - passed B2 level exam (required by university).\\
+Experience in using various laboratory equipment such as multimeters, oscilloscopes, power supplies and generators.\\
+
+\header{Interests and activities}
+Music, guitars, electronics, programming, DIY, astronomy, physics, books, movies and sports. 
+\vspace{0.05\textheight}
+\noindent\newline
+\scriptsize
+\begin{minipage}{\textwidth} 
+
+"I hereby declare that all the facts and information provided for this cover letter and CV are true. I allow my personal data stated in the abovementioned applications to be processed for the purpose of recruitment, in accordance with the Personal Data Protection Act dated 29/08/1997 (Dz.Ust.No.133, item 883)"
+\end{minipage}
+\end{document}
