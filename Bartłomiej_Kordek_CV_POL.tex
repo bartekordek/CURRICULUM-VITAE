@@ -4,15 +4,10 @@
 \usepackage{graphicx} 
 \usepackage{polski}
 \usepackage[utf8]{inputenc}
-\usepackage{setspace} %dla \onehalfspacing
+\usepackage{setspace} % \onehalfspacing
 \usepackage{lipsum}
 \usepackage{array, xcolor}
 
-\definecolor{lightgray}{gray}{0.8}
-\newcolumntype{L}{>{\raggedleft}p{0.14\textwidth}}
-\newcolumntype{R}{p{0.8\textwidth}}
-\newcommand\VRule{\color{lightgray}\vrule width 0.5pt}
-\newcommand{\wielkoscnnaglowkow}{\large}
 \newcolumntype{C}[1]{>{\centering\arraybackslash}m{#1}}
 \newcolumntype{R}[1]{>{\raggedleft\arraybackslash}m{#1}}
 
@@ -20,9 +15,9 @@
 \hyphenpenalty=5000
 \tolerance=1000
 
-\newcommand{\naglowek}[1] 
+\newcommand{\header}[1] 
 {
-	\textbf{\wielkoscnnaglowkow #1}
+	\textbf{\large #1}
 	\vspace{0.005\textheight}
 	\hrule 
 	\vspace{0.005\textheight}
@@ -38,8 +33,8 @@ CURRICULUM VITAE \\
 \begin{tabular}{@{}p{0.70\textwidth} r}
 	 \begin{minipage}{0.70\textwidth}
 		\begin{tabular}{@{}l l} 
-		\textbf{Bartłomiej}: 		& 	Bartłomiej Kordek\\
-		\textbf{Data urodzenia}: & 1989/08/02 \\
+		\textbf{Imię i nazwisko}: 		& 	Bartłomiej Kordek\\
+		\textbf{Data urodzenia}: & 1989.08.02\\
 		\textbf{Adres}:		&	ul. Prosta 211, 05-152 Czosnów	\\
 		\textbf{Telefon}:	& 507-832-154\\
 		\textbf{E-mail}:	&	 bartekordek@gmail.com\\
@@ -56,46 +51,44 @@ CURRICULUM VITAE \\
 \flushleft
 
 \large
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\naglowek{Edukacja}
+\header{Edukacja}
 \begin{tabular}{@{} m{0.60\textwidth} R{0.37\textwidth} }
 \textbf{Politechnika Warszawska}	& {2008 - 2012} \\
 \end{tabular}
 Inżynier Fizyki Technicznej, Specjalizacja: Materiały i Nanostruktury.\\
 Tytuł pracy: "Eksperymentalna analiza korelacji między liniowym współczynnikiem rozszerzalności termicznej a temperaturą przejścia szklistego w wybranych amorficznych stopach metalicznych."
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{tabular}{@{} m{0.60\textwidth} R{0.37\textwidth} }
 \textbf{Wyższa Szkoła Informatyki Stosowanej i Zarządzania}	& {2013 - dzisiaj} \\
 \end{tabular}
-Studia zaoczne - informatyka.
+Studia zaoczne - informatyka
 \flushleft
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\naglowek{Doświadczenie}
+
+\header{Doświadczenie}
 
 \begin{tabular}{@{} m{0.60\textwidth} R{0.37\textwidth} }
-	\textbf{Samsung Electronics Polska}	& {2015-01 - 2015-03}
+\textbf{Samsung Electronics Polska}	& {2015-01 - 2015-03} 
 \end{tabular}
 Młodszy inżynier ds. produkcji oprogramowania\\
 \begin{itemize}
 	\item Zarządzanie i udoskonalanie środowiska testowego.
-	\item Tworzenie oprogramowania w językach C/C++, Python i skrypty powłoki Bash.
-	\item Zarządzanie i udoskonalanie serwera ciągłej integracji. 
+	\item Tworzenie oprogramowania w językach \texttt{C/C++}, Python i skrypty powłoki Bash.
+	\item Zarządzanie i udoskonalanie serwera ciągłej integracji.
 	\item Naprawianie błędów w oprogramowaniu.
 	\item Przygotowywanie dokumentacji (\LaTeX).
 \end{itemize}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \begin{tabular}{@{} m{0.60\textwidth} R{0.37\textwidth} }
-	{ \textbf{Samsung Electronics Polska}}	& {2014-08 - 2014-12} 
+	\textbf{Samsung Electronics Polska}	& {2014-08 - 2014-12} 
 \end{tabular}
 Praktykant\\
 \begin{itemize}
-	\item Zarządzanie i udoskonalanie serwera ciągłej integracji. 
-	\item Tworzenie oprogramowania ( skrypty \emph{Bash}, C\#, C/C++ i Python).
+	\item Zarządzanie i udoskonalanie serwera ciągłej integracji.
+	\item Tworzenie oprogramowania ( skrypty \texttt{Bash}, \texttt{C\#}, \texttt{C/C++} i \texttt{Python}).
 	\item Przygotowywanie dokumentacji (\LaTeX).
 \end{itemize}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \begin{tabular}{@{} m{0.60\textwidth} R{0.37\textwidth} }
-\textbf{Urząd Gminy}	& {2013.03 - 2014-06} 
+\textbf{Urząd Gminy} & {2013.03 - 2014-06} 
 \end{tabular}
 Pracownik biurowy\\
 \begin{itemize}
@@ -105,44 +98,47 @@ Pracownik biurowy\\
 	\item Konserwacja sprzętu elektronicznego.
 \end{itemize}
 
-\begin{tabular}{@{} m{0.5\textwidth} R{0.47\textwidth} }
-\textbf{Instytut Technologii Elektrnonowej PAN}	& {2011.07} 
+\begin{tabular}{@{} m{0.60\textwidth} R{0.37\textwidth} }
+\textbf{Instytut Technologii Elektrnonowej PAN} & {2011.07} 
 \end{tabular}
 Praktykant\\
 \begin{itemize}
-	\item Tworzenie oprogramowania nadzorującego serwomechanizmy używane w kalibracji i sterowania źródłem prądowym  lasera (\emph{Labview}).
+	\item Tworzenie oprogramowania nadzorującego serwomechanizmy używane w kalibracji i sterowania źródłem prądowym lasera (\texttt{Labview}).
 	\item Utworzenie zwierciadła \emph{Bragga} dla wybranej długości światła widzialnego.
 \end{itemize}
 
+\textbf{\large Skills}
+\vspace{0.005\textheight}
+\hrule 
 
-\naglowek{Umiejętności}
 \begin{itemize}
-	\item Pakiety Biurowe (\emph{Microsoft Office}, \emph{Open Office}, \emph{Libre Office}) i \emph{Gnumeric}.
+	\item Pakiety Biurowe \texttt{Microsoft Office}, \texttt{Open Office}, \texttt{Libre Office}.
 	\item Doświadczenie w tworzeniu dokumentów przy pomocy \LaTeX.
-	\item Systemy operacyjne: \emph{Linux} (\emph{Debian}, \emph{Ubuntu}, \emph{Xubuntu}) i \emph{Windows} (95, 98, Me, Xp, Vista, 7).
-	\item Programowanie: \emph{C}, \emph{C++}, \emph{C\#}, \emph{Java}, skrpty (\emph{Bash}), \emph{Labview\emph} i Python.
-	\item Programowanie mikrokontrolerów \emph{AVR}.
-	\item Środowiska \emph{ROOT} i \emph{Mathematica}.
-	\item Środowiska \emph{Eclipse}, \emph{VIM} and MS Visual Studio.
+	\item Systemy operacyjne: \texttt{Linux} i \texttt{Windows}.
+	\item Programowanie: \texttt{C}, \texttt{C++}, \texttt{C\#}, \texttt{Java}, skrypty (\texttt{Bash}), \texttt{Labview\texttt} i \texttt{Python}.
+	\item Programowanie mikrokontrolerów \texttt{AVR}.
+	\item Środowiska \texttt{ROOT} i \texttt{Mathematica}.
+	\item Środowiska \texttt{Eclipse}, \texttt{VIM} and MS Visual Studio.
 	\item Systemy kontroli wersji GIT i Perforce.
-	\item Tworzenie stron (\emph{HTML} and \emph{CSS}).
+	\item Tworzenie stron (\texttt{HTML} and \texttt{CSS}).
 	\item Podstawowa wiedza z zakresu elektroniki i elektrotechniki.
-	\item Narzędzia \emph{JIRA} and \emph{FishEye}.
+	\item Narzędzia \texttt{JIRA} and \texttt{FishEye}.
 \end{itemize}
 
-\naglowek{Dodatkowe informacje}
+\header{Dodatkowe}
 Prawo jazdy - kategoria B.
 Znajomość język angielskiego - poziom B2.\\
 Doświadczenie w użytkowaniu sprzętu laboratoryjnego: multimetry, oscyloskopy, źródła prądowe i generatory.
-
-
-\naglowek{Zainteresowania}
+\header{Zainteresowania}
 Muzyka, gitary, elektronika, programowanie, DIY, astronomia, fizyka, książki, filmy i sport.
 \vspace{0.05\textheight}
 \noindent\newline
 \scriptsize
-\begin{minipage}{\textwidth} 
+\begin{minipage}{\textwidth}
+	 Wyrażam zgodę na przetwarzanie moich danych osobowych zawartych w mojej ofercie pracy dla potrzeb niezbędnych do realizacji procesu rekrutacji (zgodnie z Ustawą z dnia 29.08.1997 roku o Ochronie Danych Osobowych; tekst jednolity: Dz. U. z 2002r. Nr 101, poz. 926 ze zm.).
+ \end{minipage}
+ \end{document}
 
-Wyrażam zgodę na przetwarzanie moich danych osobowych zawartych w mojej ofercie pracy dla potrzeb niezbędnych do realizacji procesu rekrutacji (zgodnie z Ustawą z dnia 29.08.1997 roku o Ochronie Danych Osobowych; tekst jednolity: Dz. U. z 2002r. Nr 101, poz. 926 ze zm.).
 \end{minipage}
+
 \end{document}
