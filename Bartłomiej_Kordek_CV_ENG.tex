@@ -10,27 +10,16 @@
 
 \definecolor{lightgray}{gray}{0.8}
 
-\newcolumntype{L}{>{\raggedleft}p{0.14\textwidth}}
-
-\newcolumntype{R}{p{0.8\textwidth}}
-
-\newcommand\VRule{\color{lightgray}\vrule width 0.5pt}
-\newcommand{\wielkoscnnaglowkow}{\large}
-
-
 \newcolumntype{C}[1]{>{\centering\arraybackslash}m{#1}}
 \newcolumntype{R}[1]{>{\raggedleft\arraybackslash}m{#1}}
-
 
 \onehalfspacing
 \hyphenpenalty=5000
 \tolerance=1000
 
-\newcommand*{\studia}{Warsaw University of Technology, Faculty of Physics, major subject of Technical Physics, speciality: Materials and Nanostrcutures, obtained an engineering degre.}
-
 \newcommand{\header}[1] 
 {
-	\textbf{\wielkoscnnaglowkow #1}
+	\textbf{\large #1}
 	\vspace{0.005\textheight}
 	\hrule 
 	\vspace{0.005\textheight}
@@ -64,20 +53,18 @@ CURRICULUM VITAE \\
 \flushleft
 
 \large
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \header{Education}
 \begin{tabular}{@{} m{0.60\textwidth} R{0.37\textwidth} }
 \textbf{Warsaw University of Technology}	& {2008 - 2012} \\
 \end{tabular}
  B.S. in Technical Physics, Specialisation: Materials \& Nanostructures.\\
 Thesis title: ”Experimental analysis of correlation between temperature of glass transition and thermal linear  expansion coefficient in chosen amorphous metallic alloys.”
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{tabular}{@{} m{0.60\textwidth} R{0.37\textwidth} }
 \textbf{School of Computer Science and Managment WIT}	& {2013 - today} \\
 \end{tabular}
 External studies - Computer Science.
 \flushleft
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \header{Experience}
 
 \begin{tabular}{@{} m{0.60\textwidth} R{0.37\textwidth} }
@@ -91,19 +78,19 @@ Junior Software Developer\\
 	\item Bug fixing.
 	\item Preparation of documentation (\LaTeX).
 \end{itemize}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \begin{tabular}{@{} m{0.60\textwidth} R{0.37\textwidth} }
-	{ \textbf{Samsung Electronics Polska}}	& {2014-08 - 2014-12} 
+	\textbf{Samsung Electronics Polska}	& {2014-08 - 2014-12} 
 \end{tabular}
 Trainee\\
 \begin{itemize}
 	\item Management and improvement of continuous integration environment.
-	\item Software development ( Bash shell, C\#, C/C++ and Python).
+	\item Software development ( Bash shell, C\#, C/C++ and \texttt{Python}).
 	\item Preparation of documentation (\LaTeX). 
 \end{itemize}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \begin{tabular}{@{} m{0.60\textwidth} R{0.37\textwidth} }
-\textbf{Office worker in commune office}	& {2013.03 - 2014-06} 
+\textbf{Office worker in commune office} & {2013.03 - 2014-06} 
 \end{tabular}
 \begin{itemize}
 	\item Making, editing and management of various types of documents.
@@ -112,43 +99,45 @@ Trainee\\
 	\item Maintenance of various electronic equipment such as computers and printers.
 \end{itemize}
 
-\begin{tabular}{@{} m{0.5\textwidth} R{0.47\textwidth} }
-\textbf{Institute of Electron Technology PAN}	& {2011.07} 
+\begin{tabular}{@{} m{0.60\textwidth} R{0.37\textwidth} }
+\textbf{Institute of Electron Technology PAN} & {2011.07} 
 \end{tabular}
 Trainee:
 \begin{itemize}
-	\item Writing software in \emph{Labview} environment for servomechanism used in laser calibration.
-	\item Writing laser power control software (\emph{Labview}).
+	\item Writing laser power control software (\texttt{Labview}).
 	\item Creating a Bragg mirror for a fixed wavelength.
+	\item Writing software in \texttt{Labview} environment for servomechanisms.
 \end{itemize}
 
-\header{Skills}
+\textbf{\large Skills}
+\vspace{0.005\textheight}
+\hrule 
+
 \begin{itemize}
-	\item Office suite: (\emph{Microsoft Office}, \emph{Open Office}, \emph{Libre Office}) and \emph{Gnumeric} spreadsheet.
+	\item Office suite: (\texttt{Microsoft Office}, \texttt{Open Office}, \texttt{Libre Office}) and \texttt{Gnumeric} spreadsheet.
 	\item Experience in using \LaTeX \hspace {0.01\textwidth}typesetting system.
-	\item Experience in using operating systems: \emph{Linux} (\emph{Debian}, \emph{Ubuntu}, \emph{Xubuntu}) and \emph{Windows} (95, 98, Me, Xp, Vista, 7).
-	\item Basic skills in programming in: \emph{C}, \emph{C++}, \emph{C\#}, \emph{Java}, Linux shell scripts (\emph{Bash}), \emph{Labview\emph} and Python.
-	\item Experience in programming \emph{AVR} microcontrollers.
-	\item \emph{Mathematica} computation system and \emph{ROOT} data analysis framework.
-	\item Development environments: \emph{Eclipse}, \emph{VIM} and MS Visual Studio.
+	\item Operating systems: \texttt{Linux} and \texttt{Windows}.
+	\item Basic skills in programming in: \texttt{C}, \texttt{C++}, \texttt{C\#}, \texttt{Java}, Linux shell scripts (\texttt{Bash}), \texttt{Labview\texttt} and Python.
+	\item Experience in programming \texttt{AVR} microcontrollers.
+	\item \texttt{Mathematica} computation system and \texttt{ROOT} data analysis framework.
+	\item Development environments: \texttt{Eclipse}, \texttt{VIM} and MS Visual Studio.
 	\item GIT and Perforce revision control systems.
-	\item Experience in creating websites (\emph{HTML} and \emph{CSS}).
+	\item Experience in creating websites (\texttt{HTML} and \texttt{CSS}).
 	\item Basic knowledge of electronics and electrotechnics.
-	\item \emph{JIRA} and \emph{FishEye}.
+	\item \texttt{JIRA} and \texttt{FishEye}.
 \end{itemize}
 
 \header{Additional informations}
 Driving license - B category.\\
 English language - passed B2 level exam (required by university).\\
 Experience in using various laboratory equipment such as multimeters, oscilloscopes, power supplies and generators.\\
-
 \header{Interests and activities}
-Music, guitars, electronics, programming, DIY, astronomy, physics, books, movies and sports. 
+Music, guitars, electronics, programming, DIY, astronomy, physics, books, movies and sports.
 \vspace{0.05\textheight}
 \noindent\newline
 \scriptsize
-\begin{minipage}{\textwidth} 
-
-I hereby declare that all the facts and information provided for this cover letter and CV are true. I allow my personal data stated in the abovementioned applications to be processed for the purpose of recruitment, in accordance with the Personal Data Protection Act dated 29/08/1997 (Dz.Ust.No.133, item 883).
+\begin{minipage}{\textwidth}
+	I hereby declare that all the facts and information provided for this cover letter and CV are true. I allow my personal data stated in the abovementioned applications to be processed for the purpose of recruitment, in accordance with the Personal Data Protection Act dated 29/08/1997 (Dz.Ust.No.133, item 883).
 \end{minipage}
+
 \end{document}
